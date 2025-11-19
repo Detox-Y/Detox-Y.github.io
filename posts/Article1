@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>在末日便利店打烊之前 · Elaina's Writing Space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <!-- 顶部 -->
+    <header class="site-header">
+        <div class="site-title">
+            <a href="../index.html" style="color: inherit; text-decoration: none;">
+                Elaina's Writing Space
+            </a>
+        </div>
+        <div class="site-subtitle">Story · 在末日便利店打烊之前</div>
+    </header>
+
+    <main class="container">
+        <!-- 文章头部 -->
+        <article>
+            <header class="article-header">
+                <h1 class="article-title">在末日便利店打烊之前</h1>
+                <div class="article-meta">
+                    短篇 · 都市奇幻 · 写于 2025-11-20
+                </div>
+            </header>
+
+            <!-- 文章正文内容（你可以随便排版） -->
+            <section class="article-content">
+                <p>
+                    城市停电的那一晚，只有这家便利店的灯还亮着。
+                    小张照常在凌晨三点刷货架标签，贴到「世界末日特价」那一排的时候，
+                    他以为只是隔壁店长又搞了什么新鲜营销。
+                </p>
+
+                <p>
+                    直到第一个顾客走进来，递上来的不是现金，也不是手机，而是一张皱巴巴的「愿望清单」。
+                    清单上写着：<br />
+                    ① 请让我再见她一面。<br />
+                    ② 如果不能，再让我忘掉所有和她有关的事。
+                </p>
+
+                <h2>01 · 世界末日商品区</h2>
+                <p>
+                    ……（这里就写你真正的正文，可以用 &lt;h2&gt;、&lt;h3&gt; 分小标题，用 &lt;ul&gt; &lt;li&gt; 做列表等等）
+                </p>
+            </section>
+        </article>
+
+        <!-- 评论区 -->
+        <section class="comments-section">
+            <h2 class="comments-title">评论区 · 留点什么再走？</h2>
+
+            <!-- 这里是你嵌入评论系统的位置 -->
+
+            <!-- ☆ 方法A：暂时先放一个“假评论框”（纯前端，不会真的存） 
+            <div class="comment-placeholder">
+                <textarea placeholder="想写点什么给未来重刷这个脑洞的你自己，或路过的读者？（纯装饰，不会真实提交）"></textarea>
+                <button>假装提交评论</button>
+            </div>
+            -->
+
+            <!-- ☆ 方法B：嵌入真正的评论系统（示例：utterances，用 GitHub Issues 当评论） 
+                 你需要先去 https://utteranc.es/ 配置，然后把下面 repo 改成你的 -->
+            <!--
+            <script src="https://utteranc.es/client.js"
+                    repo="your-username/your-repo"
+                    issue-term="pathname"
+                    theme="github-dark"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+            -->
+
+            <!-- 或者留一个占位提醒 -->
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">
+                （这里预留给评论系统：日后接入 Disqus、giscus 或 utterances 等）
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        © 2025 Elaina · 一家在末日也会继续营业的便利店
+    </footer>
+</body>
+</html>
