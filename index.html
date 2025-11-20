@@ -1,88 +1,56 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的脑洞与坑</title>
-    <style>
-        body {
-            background-color: transparent;
-            background-attachment: fixed;
-            color: #ffffff; /* 文字颜色 */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-image: linear-gradient(to top, #0c0f19, #231564); /* 渐变色 */
-            padding: 20px;
-            text-align: center;
-            width: auto;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        nav {
-            background-color: #0c0f19; /* 导航栏背景颜色 */
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #FFefbb;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 20px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            padding: 20px;
-            background-image: linear-gradient(#0c0f19, #6633ff); /* 渐变色 */
-            border-radius: 0px;
-            height: 100vh;
-            width: 100%;
-        }
-
-        footer {
-            background-color: #160f3f;
-            text-align: center;
-            padding: 10px;
-            position: bottom;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <title>我的写作脑洞站 · Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>我的脑洞与坑</h1>
+    <!-- 顶部 -->
+    <header class="site-header">
+        <div class="site-title">Ey奕巳杨的文字仓库</div>
+        <div class="site-subtitle">一些不想忘掉的故事开头、世界观设定和奇怪脑洞。</div>
     </header>
-    
-    <nav>
-        <a href="#">简介</a>
-        <a href="#">文章</a>
-        <a href="#">联系</a>
-    </nav>
 
-    <div class="container">
-        
-        <p>脑洞与坑很可能没有售后，</p>
-        <P>因此不做任何更新的保证……</P>
-    </div>
+    <!-- 主体内容 -->
+    <main class="container">
+        <h2 class="section-title">最近的脑洞 / Stories</h2>
 
-    <div class="main">
+        <section class="posts-grid">
+            <!-- 文章卡片 1 -->
+            <a class="post-card" href="posts/article1.html">
+                <img class="post-cover" src="images/article1-cover.jpg" alt="文章1封面" />
+                <div class="post-body">
+                    <div class="post-title">在末日便利店打烊之前</div>
+                    <div class="post-meta">短篇 · 都市奇幻 · 2025-11-20</div>
+                    <p class="post-excerpt">
+                        城市停电的那一晚，只有这家便利店的灯还亮着。  
+                        顾客们发现，货架上卖的，已经不是正常人会买的东西……
+                    </p>
+                </div>
+            </a>
 
-    </div>
+            <!-- 文章卡片 2 -->
+            <a class="post-card" href="posts/article2.html">
+                <img class="post-cover" src="images/article2-cover.jpg" alt="文章2封面" />
+                <div class="post-body">
+                    <div class="post-title">给未来室友的 108 条宿舍守则</div>
+                    <div class="post-meta">随笔 · 日常向 · 2025-10-01</div>
+                    <p class="post-excerpt">
+                        如果大学宿舍可以提前签订「合租灵魂条约」，也许很多友情可以少死几次。
+                        这是一份认真的不正经指南。
+                    </p>
+                </div>
+            </a>
 
-    <footer>
-        &copy; 2023 Ey奕巳杨的脑洞与坑堆积地
+            <!-- 以后你想新增文章，就复制一份上面的 <a class="post-card"> ... </a> 改链接和文字即可 -->
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        © 2025 Ey奕巳杨 · Hosted on GitHub Pages
     </footer>
 </body>
 </html>
