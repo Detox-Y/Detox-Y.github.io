@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 :root {
-    --bg: #0d1117;
-    --bg-elevated: #161b22;
-    --border-subtle: #30363d;
-    --text-main: #e6edf3;
-    --text-muted: #8b949e;
-    --accent: #58a6ff;
-    --accent-soft: rgba(88, 166, 255, 0.15);
+    --bg: #0c0f19;              /* 整体背景：你原来 nav & container 的深蓝紫 */
+    --bg-elevated: #160f3f;      /* 提升一点的面板、卡片背景：你原来 footer 的颜色 */
+    --border-subtle: #2a214f;    /* 卡片边框，用稍微亮一点的紫 */
+    --text-main: #ffffff;        /* 主要文字：白色 */
+    --text-muted: #c2bbff;       /* 次要文字：偏淡一点的紫 */
+    --accent: #ffefbb;           /* 你原来 nav 链接用的那种奶黄色 */
+    --accent-soft: rgba(255, 239, 187, 0.15); /* 奶黄色的柔和高亮 */
 }
 
 * {
@@ -18,7 +18,9 @@
 }
 
 body {
-    background-color: var(--bg);
+    background-color: #0c0f19;
+    background-image: linear-gradient(#0c0f19, #6633ff);  /* 你原来 container 那条渐变 */
+    background-attachment: fixed;
     color: var(--text-main);
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
@@ -28,7 +30,7 @@ body {
 .site-header {
     padding: 24px 32px;
     border-bottom: 1px solid var(--border-subtle);
-    background: radial-gradient(circle at top left, #1f2933 0, #0d1117 40%, #02040a 100%);
+    background-image: linear-gradient(to top, #0c0f19, #231564);
 }
 
 .site-title {
@@ -53,8 +55,9 @@ body {
 /* 主页文章卡片布局 */
 .posts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 220px)); /* 固定宽度更像一本书 */
+    justify-content: center;   /* 居中整排书 */
+    gap: 24px;
 }
 
 /* 整个卡片可点击 */
@@ -67,6 +70,9 @@ body {
     border: 1px solid var(--border-subtle);
     overflow: hidden;
     transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background-color 0.16s ease;
+
+    width: 220px;      /* 跟上面的 minmax 对齐 */
+    height: 360px;     /* 让它偏高一点，像竖着的书 */
 }
 
 .post-card:hover {
@@ -79,7 +85,7 @@ body {
 /* 封面图片 */
 .post-cover {
     width: 100%;
-    height: 160px;
+    height: 220px;   /* 封面更高一点 */
     object-fit: cover;
 }
 
