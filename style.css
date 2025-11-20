@@ -19,8 +19,11 @@
 
 body {
     background-color: #0c0f19;
-    background-image: linear-gradient(#0c0f19, #6633ff);  /* 你原来 container 那条渐变 */
+    background-image: linear-gradient(to bottom, #0c0f19, #231564 35%, #3c1b9c 70%, #6633ff 100%);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     color: var(--text-main);
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
@@ -98,6 +101,7 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 6px;
+    color: #f7ffbb;   /* 奶黄色 */
 }
 
 .post-meta {
